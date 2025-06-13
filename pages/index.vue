@@ -114,7 +114,7 @@ const ringBell = () => {
 const translations = {
   zh: {
     hero: {
-      title: '开启您的人生蜕变之旅',
+      title: '立即开启您的人生蜕变之旅',
       subtitle: '专业人生教练 | 个人成长导师 | 职业发展顾问',
       businessLink: '了解我的服务'
     },

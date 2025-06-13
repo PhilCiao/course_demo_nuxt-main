@@ -383,7 +383,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-mkeWVGj7.js")
+    component: () => import("./_nuxt/index-DMfETBuK.js")
   },
   {
     name: "about-us",
