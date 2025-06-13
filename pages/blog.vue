@@ -42,29 +42,11 @@ li {
 <script setup>
 import { ref } from 'vue';
 
-
 const blog = ref({
-  title: "",
-  content: "",
-  author: "",
-  date: "",
-  tags: []
+  title: "示例博客文章",
+  content: "这是一篇示例博客文章的内容。您可以在这里添加您的博客内容。",
+  author: "作者名称",
+  date: "2024-03-21",
+  tags: ["示例", "博客", "Vue"]
 });
-
-
-
-async function getBlog() {
-  const res = await $fetch('http://localhost:7000/', {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-  console.log(res);
-  blog.value = res
-}
-
-onMounted(() => {
-  getBlog();
-})
 </script>

@@ -149,7 +149,7 @@ const translations = {
       },
       phone: {
         title: '电话支持',
-        description: '+86 18621837628',
+        description: '+86 1234567890',
         button: '立即拨打'
       },
       email: {
@@ -196,7 +196,7 @@ const translations = {
       },
       phone: {
         title: 'Phone Support',
-        description: '+86 18621837628',
+        description: '+86 1234567890',
         button: 'Call Now'
       },
       email: {
