@@ -1,22 +1,20 @@
 <template>
   <div class="container">
-    <header class="header">
-      <div class="language-switch">
-        <button 
-          class="lang-btn" 
-          :class="{ active: currentLang === 'zh' }"
-          @click="currentLang = 'zh'"
-        >中文</button>
-        <button 
-          class="lang-btn" 
-          :class="{ active: currentLang === 'en' }"
-          @click="currentLang = 'en'"
-        >English</button>
-      </div>
-    </header>
-
     <div class="hero">
       <div class="hero-content">
+        <div class="language-switch">
+          <button 
+            class="lang-btn" 
+            :class="{ active: currentLang === 'zh' }"
+            @click="currentLang = 'zh'"
+          >中文</button>
+          <button 
+            class="lang-btn" 
+            :class="{ active: currentLang === 'en' }"
+            @click="currentLang = 'en'"
+          >English</button>
+        </div>
+        
         <div class="hero-text">
           <h1>{{ t.hero.title }}</h1>
           <p class="subtitle">{{ t.hero.subtitle }}</p>
@@ -227,22 +225,6 @@ const t = computed(() => translations[currentLang.value])
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.9);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.language-switch {
-  display: flex;
-  gap: 0.5rem;
-}
-
 .hero {
   position: relative;
   background: linear-gradient(135deg, #f0f9f4 0%, #e6f4ea 100%);
@@ -292,6 +274,31 @@ const t = computed(() => translations[currentLang.value])
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.language-switch {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(66, 184, 131, 0.2);
+  padding: 0.5rem 1.2rem;
+  margin-left: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.lang-btn.active {
+  background: #42b883;
+  color: white;
+  border-color: #42b883;
+  box-shadow: 0 4px 12px rgba(66, 184, 131, 0.2);
 }
 
 .hero-text {
@@ -757,13 +764,6 @@ h1 {
 
   .love-test-btn .heart {
     font-size: 1.1rem;
-  }
-
-  .header {
-    padding: 0.5rem 1rem;
-  }
-  .language-switch {
-    gap: 0.3rem;
   }
 }
 </style>

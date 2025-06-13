@@ -2,15 +2,15 @@
   <div class="about-container">
     <div class="hero-section">
       <h1 class="main-title">关于我们</h1>
-      <p class="subtitle">致力于创造卓越的数字体验</p>
+      <p class="subtitle">致力于创造卓越的人生体验</p>
     </div>
 
     <div class="content-section">
       <div class="intro-card">
         <h2>我们的故事</h2>
         <p>
-          我们是一支充满激情的技术团队，专注于为客户提供创新的数字解决方案。
-          从网站开发到移动应用，从用户体验设计到技术咨询，我们始终坚持用技术改变世界的信念。
+          我们是一支充满激情的顾问团队，专注于为客户提供生活方式解决方案。
+          从生活方式到职业规划，从心理咨询到人际关系，我们始终坚持用专业优化生命质量的信念。
         </p>
       </div>
 
@@ -18,32 +18,32 @@
         <div class="value-card">
           <div class="icon">🚀</div>
           <h3>创新驱动</h3>
-          <p>持续探索前沿技术，为客户带来突破性的解决方案</p>
+          <p>持续探索前沿生活方式，为客户带来突破性的解决方案</p>
         </div>
         
         <div class="value-card">
           <div class="icon">🎯</div>
           <h3>专业精神</h3>
-          <p>严谨的工作态度，精湛的技术能力，确保项目质量</p>
+          <p>严谨的工作态度，精湛的专业能力，确保项目质量</p>
         </div>
         
         <div class="value-card">
           <div class="icon">🤝</div>
           <h3>客户至上</h3>
-          <p>深入理解客户需求，提供贴心的技术支持和服务</p>
+          <p>深入理解客户需求，提供贴心的生活方式支持和服务</p>
         </div>
       </div>
 
       <div class="team-section">
         <h2>我们的团队</h2>
         <p>
-          汇聚了前端开发、后端架构、UI/UX设计、产品管理等多领域的专业人才。
+          汇聚了生活方式、职业规划、心理咨询、人际关系等多领域的专业人才。
           我们相信团队的力量，通过协作创造更大的价值。
         </p>
         
         <div class="stats">
           <div class="stat-item">
-            <span class="number">50+</span>
+            <span class="number">100+</span>
             <span class="label">成功项目</span>
           </div>
           <div class="stat-item">
@@ -51,7 +51,7 @@
             <span class="label">行业经验</span>
           </div>
           <div class="stat-item">
-            <span class="number">99%</span>
+            <span class="number">98%</span>
             <span class="label">客户满意度</span>
           </div>
         </div>
@@ -59,7 +59,7 @@
 
       <div class="contact-cta">
         <h2>让我们一起创造未来</h2>
-        <p>有项目需求或技术咨询？我们随时准备为您提供专业服务。</p>
+        <p>有项目需求或生活方式咨询？我们随时准备为您提供专业服务。</p>
         <button class="cta-button">联系我们</button>
       </div>
     </div>
