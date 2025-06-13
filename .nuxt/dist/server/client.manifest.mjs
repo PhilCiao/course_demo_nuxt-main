@@ -1,10 +1,10 @@
 export default {
-  "_CuXjBB48.js": {
+  "_CVbCVGUH.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CuXjBB48.js",
+    "file": "CVbCVGUH.js",
     "name": "v3",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -15,13 +15,13 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CZzXXw4b.js",
+    "file": "Dm9kVtHb.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CuXjBB48.js"
+      "_CVbCVGUH.js"
     ],
     "css": []
   },
@@ -36,13 +36,13 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BXDI5bGV.js",
+    "file": "BYKewFxs.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CuXjBB48.js"
+      "_CVbCVGUH.js"
     ],
     "css": []
   },
@@ -57,7 +57,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "sz8UjH6R.js",
+    "file": "CBu_bE0z.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -81,7 +81,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DRz6qEr-.js",
+    "file": "7RLSCD58.js",
     "name": "about-us",
     "src": "pages/about-us.vue",
     "isDynamicEntry": true,
@@ -101,7 +101,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CCPWJzsj.js",
+    "file": "BnZxsdGE.js",
     "name": "blog",
     "src": "pages/blog.vue",
     "isDynamicEntry": true,
@@ -121,7 +121,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BingHfC_.js",
+    "file": "F8OMSTKL.js",
     "name": "business",
     "src": "pages/business.vue",
     "isDynamicEntry": true,
@@ -141,7 +141,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BEFyhByg.js",
+    "file": "CFKBwfkS.js",
     "name": "contact-us",
     "src": "pages/contact-us.vue",
     "isDynamicEntry": true,
@@ -161,7 +161,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "-qPKGWkQ.js",
+    "file": "B-n2UdY6.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -170,8 +170,8 @@ export default {
     ],
     "css": []
   },
-  "index.CoCjrCyB.css": {
-    "file": "index.CoCjrCyB.css",
+  "index.BIkhuBtT.css": {
+    "file": "index.BIkhuBtT.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

@@ -44,6 +44,12 @@
             <span class="stat-label">{{ t.stats.experience }}</span>
           </div>
         </div>
+
+        <div class="love-test-btn-wrapper">
+          <a href="https://5Love.healingman.vip" target="_blank" class="love-test-btn">
+            <span class="heart">❤</span> 爱的语言小测试
+          </a>
+        </div>
       </div>
       <div class="hero-decoration">
         <div class="decoration-circle circle-1"></div>
@@ -686,6 +692,44 @@ h1 {
   }
 }
 
+.love-test-btn-wrapper {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 10;
+}
+
+.love-test-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  border-radius: 999px;
+  padding: 0.5rem 1.3rem 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.love-test-btn .heart {
+  font-size: 1.3rem;
+  color: #e74c3c;
+}
+
+.love-test-btn:hover {
+  background: #e74c3c;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(231,76,60,0.18);
+}
+
+.love-test-btn:hover .heart {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 3rem 1.5rem;
@@ -706,6 +750,20 @@ h1 {
 
   .circle-1, .circle-2, .circle-3 {
     opacity: 0.5;
+  }
+
+  .love-test-btn-wrapper {
+    top: 12px;
+    left: 12px;
+  }
+
+  .love-test-btn {
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem 0.4rem 0.8rem;
+  }
+
+  .love-test-btn .heart {
+    font-size: 1.1rem;
   }
 }
 </style>
