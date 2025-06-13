@@ -1,14 +1,33 @@
-import { shallowReactive, reactive, effectScope, getCurrentScope, hasInjectionContext, getCurrentInstance, inject, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineComponent, h, resolveComponent, computed, mergeProps, withCtx, createVNode, createTextVNode, useSSRContext, provide, ref, Suspense, Fragment, defineAsyncComponent, unref, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, createApp } from "vue";
-import { $fetch } from "ofetch";
-import { baseURL, publicAssetsURL } from "#internal/nuxt/paths";
-import { createHooks } from "/Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/hookable/dist/index.mjs";
-import { getContext, executeAsync } from "/Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unctx/dist/index.mjs";
-import { sanitizeStatusCode, createError as createError$1, appendHeader } from "/Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/h3/dist/index.mjs";
-import { START_LOCATION, createMemoryHistory, createRouter as createRouter$1, RouterView } from "vue-router";
-import { toRouteMatcher, createRouter } from "/Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/radix3/dist/index.mjs";
-import { defu } from "/Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/defu/dist/defu.mjs";
-import { hasProtocol, joinURL, withQuery, isScriptProtocol, parseQuery, withTrailingSlash, withoutTrailingSlash } from "/Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/ufo/dist/index.mjs";
-import { ssrRenderAttrs, ssrRenderComponent, ssrRenderAttr, ssrRenderSuspense, ssrRenderVNode } from "vue/server-renderer";
+import { defineComponent, shallowRef, h, resolveComponent, hasInjectionContext, getCurrentInstance, computed, ref, inject, Suspense, Fragment, createApp, provide, shallowReactive, toRef, onErrorCaptured, onServerPrefetch, unref, createVNode, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, getCurrentScope, withCtx, createTextVNode, useSSRContext } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/vue/index.mjs';
+import { $fetch } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/ofetch/dist/node.mjs';
+import { b as baseURL, p as publicAssetsURL } from '../_/renderer.mjs';
+import { createHooks } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/hookable/dist/index.mjs';
+import { getContext, executeAsync } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unctx/dist/index.mjs';
+import { sanitizeStatusCode, createError as createError$1, appendHeader } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/h3/dist/index.mjs';
+import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/vue-router/dist/vue-router.node.mjs';
+import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/radix3/dist/index.mjs';
+import { defu } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/defu/dist/defu.mjs';
+import { parseQuery, hasProtocol, joinURL, withQuery, withTrailingSlash, withoutTrailingSlash, isScriptProtocol } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/ufo/dist/index.mjs';
+import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode, ssrRenderAttrs, ssrRenderAttr } from 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/vue/server-renderer/index.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import '../nitro/nitro.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/destr/dist/index.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/node-mock-http/dist/index.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unstorage/dist/index.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/ohash/dist/index.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/klona/dist/index.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/scule/dist/index.mjs';
+import 'node:fs';
+import 'node:url';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/pathe/dist/index.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unhead/dist/server.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/devalue/index.js';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unhead/dist/utils.mjs';
+import 'file:///Users/philmac/Documents/AI/course_demo_nuxt-main/node_modules/unhead/dist/plugins.mjs';
+
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
     baseURL: baseURL()
@@ -369,7 +388,7 @@ async function getRouteRules(arg) {
   {
     useNuxtApp().ssrContext._preloadManifest = true;
     const _routeRulesMatcher = toRouteMatcher(
-      createRouter({ routes: (/* @__PURE__ */ useRuntimeConfig()).nitro.routeRules })
+      createRouter$1({ routes: (/* @__PURE__ */ useRuntimeConfig()).nitro.routeRules })
     );
     return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
   }
@@ -378,27 +397,27 @@ const _routes = [
   {
     name: "blog",
     path: "/blog",
-    component: () => import("./_nuxt/blog-C8El6WmP.js")
+    component: () => import('./blog-C8El6WmP.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-mkeWVGj7.js")
+    component: () => import('./index-mkeWVGj7.mjs')
   },
   {
     name: "about-us",
     path: "/about-us",
-    component: () => import("./_nuxt/about-us-BemtvR-u.js")
+    component: () => import('./about-us-BemtvR-u.mjs')
   },
   {
     name: "business",
     path: "/business",
-    component: () => import("./_nuxt/business-CWHSJXE5.js")
+    component: () => import('./business-CWHSJXE5.mjs')
   },
   {
     name: "contact-us",
     path: "/contact-us",
-    component: () => import("./_nuxt/contact-us-OO9UFni_.js")
+    component: () => import('./contact-us-OO9UFni_.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -490,7 +509,6 @@ const configRouterOptions = {
   hashMode: false,
   scrollBehaviorType: "auto"
 };
-const hashMode = false;
 const routerOptions = {
   ...configRouterOptions,
   ...routerOptions0
@@ -535,7 +553,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     const history = ((_a = routerOptions.history) == null ? void 0 : _a.call(routerOptions, routerBase)) ?? createMemoryHistory(routerBase);
     const routes2 = routerOptions.routes ? ([__temp, __restore] = executeAsync(() => routerOptions.routes(_routes)), __temp = await __temp, __restore(), __temp) ?? _routes : _routes;
     let startPosition;
-    const router = createRouter$1({
+    const router = createRouter({
       ...routerOptions,
       scrollBehavior: (to, from, savedPosition) => {
         if (from === START_LOCATION) {
@@ -758,18 +776,12 @@ function useRequestEvent(nuxtApp) {
   return (_a = nuxtApp.ssrContext) == null ? void 0 : _a.event;
 }
 function prerenderRoutes(path) {
-  if (!import.meta.prerender) {
-    return;
-  }
   const paths = toArray(path);
   appendHeader(useRequestEvent(), "x-nitro-prerender", paths.map((p) => encodeURIComponent(p)).join(", "));
 }
 let routes;
 const prerender_server_sqIxOBipVr4FbVMA9kqWL0wT8FPop6sKAXLVfifsJzk = /* @__PURE__ */ defineNuxtPlugin(async () => {
   let __temp, __restore;
-  if (!import.meta.prerender || hashMode) {
-    return;
-  }
   if (routes && !routes.length) {
     return;
   }
@@ -1306,8 +1318,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-pXRFapR7.js"));
-    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-BuqtHWfB.js"));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-pXRFapR7.mjs'));
+    const _Error = defineAsyncComponent(() => import('./error-500-BuqtHWfB.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1388,10 +1400,6 @@ let entry;
   };
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
-export {
-  _export_sfc as _,
-  __nuxt_component_0$1 as a,
-  entry$1 as default,
-  tryUseNuxtApp as t
-};
+
+export { _export_sfc as _, __nuxt_component_0$1 as a, entry$1 as default, tryUseNuxtApp as t };
 //# sourceMappingURL=server.mjs.map
