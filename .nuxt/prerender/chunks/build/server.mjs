@@ -402,12 +402,12 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DyXF6qE4.mjs')
+    component: () => import('./index-BE-Q4Bdj.mjs')
   },
   {
     name: "about-us",
     path: "/about-us",
-    component: () => import('./about-us-BemtvR-u.mjs')
+    component: () => import('./about-us-D7xii6Ug.mjs')
   },
   {
     name: "business",
@@ -1283,11 +1283,9 @@ const _sfc_main$2 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_Header = __nuxt_component_0;
   const _component_NuxtPage = __nuxt_component_1;
-  const _component_Footer = resolveComponent("Footer");
   _push(`<div${ssrRenderAttrs(_attrs)}>`);
   _push(ssrRenderComponent(_component_Header, null, null, _parent));
   _push(ssrRenderComponent(_component_NuxtPage, null, null, _parent));
-  _push(ssrRenderComponent(_component_Footer, null, null, _parent));
   _push(`</div>`);
 }
 const _sfc_setup$2 = _sfc_main$2.setup;
