@@ -1,20 +1,5 @@
 <template>
   <div class="container">
-    <header class="header">
-      <div class="language-switch">
-        <button 
-          class="lang-btn" 
-          :class="{ active: currentLang === 'zh' }"
-          @click="currentLang = 'zh'"
-        >中文</button>
-        <button 
-          class="lang-btn" 
-          :class="{ active: currentLang === 'en' }"
-          @click="currentLang = 'en'"
-        >English</button>
-      </div>
-    </header>
-
     <div class="hero">
       <div class="hero-content">
         <div class="hero-text">
@@ -225,22 +210,6 @@ const t = computed(() => translations[currentLang.value])
   margin: 0 auto;
   padding: 2rem;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-.header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.9);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.language-switch {
-  display: flex;
-  gap: 0.5rem;
 }
 
 .hero {
@@ -757,13 +726,6 @@ h1 {
 
   .love-test-btn .heart {
     font-size: 1.1rem;
-  }
-
-  .header {
-    padding: 0.5rem 1rem;
-  }
-  .language-switch {
-    gap: 0.3rem;
   }
 }
 </style>

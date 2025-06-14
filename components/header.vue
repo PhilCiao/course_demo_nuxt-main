@@ -18,9 +18,6 @@
           <li class="nav-item">
             <NuxtLink to="/blog" class="nav-link">博客</NuxtLink>
           </li>
-          <li class="nav-item">
-            <NuxtLink to="/contact-us" class="nav-link">联系我们</NuxtLink>
-          </li>
         </ul>
       </nav>
     </div>

@@ -402,7 +402,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BE-Q4Bdj.mjs')
+    component: () => import('./index-HcFb_A12.mjs')
   },
   {
     name: "about-us",
@@ -413,11 +413,6 @@ const _routes = [
     name: "business",
     path: "/business",
     component: () => import('./business-CWHSJXE5.mjs')
-  },
-  {
-    name: "contact-us",
-    path: "/contact-us",
-    component: () => import('./contact-us-OO9UFni_.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -1103,14 +1098,14 @@ const _export_sfc = (sfc, props) => {
 const _sfc_main$3 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0$1;
-  _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))} data-v-690f537d><div class="container" data-v-690f537d><div class="logo" data-v-690f537d>`);
+  _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))} data-v-92c393c8><div class="container" data-v-92c393c8><div class="logo" data-v-92c393c8>`);
   _push(ssrRenderComponent(_component_NuxtLink, {
     to: "/",
     class: "logo-link"
   }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<img${ssrRenderAttr("src", _imports_0)} alt="Life Coach Logo" class="logo-image" data-v-690f537d${_scopeId}>`);
+        _push2(`<img${ssrRenderAttr("src", _imports_0)} alt="Life Coach Logo" class="logo-image" data-v-92c393c8${_scopeId}>`);
       } else {
         return [
           createVNode("img", {
@@ -1123,7 +1118,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</div><nav class="nav" data-v-690f537d><ul class="nav-list" data-v-690f537d><li class="nav-item" data-v-690f537d>`);
+  _push(`</div><nav class="nav" data-v-92c393c8><ul class="nav-list" data-v-92c393c8><li class="nav-item" data-v-92c393c8>`);
   _push(ssrRenderComponent(_component_NuxtLink, {
     to: "/",
     class: "nav-link"
@@ -1139,7 +1134,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</li><li class="nav-item" data-v-690f537d>`);
+  _push(`</li><li class="nav-item" data-v-92c393c8>`);
   _push(ssrRenderComponent(_component_NuxtLink, {
     to: "/about-us",
     class: "nav-link"
@@ -1155,7 +1150,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</li><li class="nav-item" data-v-690f537d>`);
+  _push(`</li><li class="nav-item" data-v-92c393c8>`);
   _push(ssrRenderComponent(_component_NuxtLink, {
     to: "/blog",
     class: "nav-link"
@@ -1171,22 +1166,6 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</li><li class="nav-item" data-v-690f537d>`);
-  _push(ssrRenderComponent(_component_NuxtLink, {
-    to: "/contact-us",
-    class: "nav-link"
-  }, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`联系我们`);
-      } else {
-        return [
-          createTextVNode("联系我们")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
   _push(`</li></ul></nav></div></header>`);
 }
 const _sfc_setup$3 = _sfc_main$3.setup;
@@ -1195,7 +1174,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/header.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-690f537d"]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-92c393c8"]]);
 const defineRouteProvider = (name = "RouteProvider") => defineComponent({
   name,
   props: {
