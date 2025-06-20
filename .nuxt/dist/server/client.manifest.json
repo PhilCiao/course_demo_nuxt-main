@@ -1,10 +1,10 @@
 {
-  "_aNGDekk-.js": {
+  "_BEkavZbR.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "aNGDekk-.js",
+    "file": "BEkavZbR.js",
     "name": "v3",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -15,13 +15,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B9KWKNfn.js",
+    "file": "BcCmIQ6J.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_aNGDekk-.js"
+      "_BEkavZbR.js"
     ],
     "css": []
   },
@@ -36,13 +36,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "_uLuo4Ue.js",
+    "file": "Cftry9dX.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_aNGDekk-.js"
+      "_BEkavZbR.js"
     ],
     "css": []
   },
@@ -57,7 +57,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Bp2-9YsM.js",
+    "file": "waE7xhVH.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -81,7 +81,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C9uWSz1y.js",
+    "file": "CuH-stax.js",
     "name": "about-us",
     "src": "pages/about-us.vue",
     "isDynamicEntry": true,
@@ -101,7 +101,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "gAu9aVMV.js",
+    "file": "C522KgfY.js",
     "name": "blog",
     "src": "pages/blog.vue",
     "isDynamicEntry": true,
@@ -121,7 +121,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DbwtCibK.js",
+    "file": "CBiXA6sW.js",
     "name": "business",
     "src": "pages/business.vue",
     "isDynamicEntry": true,
@@ -141,7 +141,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BxCK3unL.js",
+    "file": "CPPcauHW.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -150,8 +150,8 @@
     ],
     "css": []
   },
-  "index.DTKCyHOh.css": {
-    "file": "index.DTKCyHOh.css",
+  "index.TJjTX8MC.css": {
+    "file": "index.TJjTX8MC.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
