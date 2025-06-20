@@ -10,13 +10,10 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <NuxtLink to="/" class="nav-link">首页</NuxtLink>
+            <NuxtLink to="/business" class="nav-link">服务</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink to="/about-us" class="nav-link">关于我们</NuxtLink>
-          </li>
-          <li class="nav-item">
-            <NuxtLink to="/blog" class="nav-link">博客</NuxtLink>
+            <NuxtLink to="/about-us" class="nav-link">愿景</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -88,7 +85,7 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.43rem;
 }
 
 .nav-link:hover {
@@ -121,7 +118,7 @@
   
   .nav-link {
     padding: 8px 12px;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -132,7 +129,7 @@
   
   .nav-link {
     padding: 6px 10px;
-    font-size: 0.9rem;
+    font-size: 1.17rem;
   }
   
   .logo {
